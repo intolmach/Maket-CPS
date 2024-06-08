@@ -1,3 +1,5 @@
+@import 'style';
+
 $bgColor: #24292e;
 $white: #ffffff;
 $whiteSmoke: #f8f8f8;
@@ -7,17 +9,6 @@ $grey: #7e7e82;
 $grafit: #1b1c21;
 $pink: #ff3e79;
 $pung: #b8ffec;
-
-/* @import url('fonts.scss');
-@import url('header.scss');
-@import url('main.scss');
-@import url('menu-modal.scss');
-@import url('mobile-menu.scss');
-@import url('footer.scss');
-@import url('swiper-brands.scss');
-@import url('swiper-price.scss');
-@import url('swiper-technika.scss');
-@import url('reset.scss'); */
 
 body {
   padding: 0;
