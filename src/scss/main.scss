@@ -102,13 +102,6 @@
 }
 
 @media (min-width: 768px) {
-  .header-start__button--burger,
-  .header-end__button--call,
-  .header-end__button--chat,
-  .header-end__button--profile {
-    display: block;
-  }
-
   .main-table {
     flex-direction: row;
   }
@@ -125,41 +118,12 @@
   .main-table__text--open {
     max-height: unset;
   }
-
-  .header-start .header-start__button--burger {
-    margin-right: 24px;
-  }
-
-  .header-start .header-start__button--burger::after {
-    display: block;
-  }
 }
 
 @media (min-width: 1120px) {
-  .header {
-    display: none;
-  }
-
   .main-title {
     display: flex;
     align-items: center;
-  }
-
-  .header-start,
-  .header-end__button--call,
-  .header-end__button--chat,
-  .header-end__button--profile,
-  .header__divider {
-    display: none;
-  }
-
-  .header-end__button--repair,
-  .header-end__button--checkstatus {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    width: auto;
-    padding-right: 48px;
   }
 
   .button span {
@@ -174,23 +138,11 @@
     padding-top: 42px;
   }
 
-  .header-end__button--repair {
-    margin-right: 24px;
-  }
-
-  .header-end__button--repair::after {
-    display: none;
-  }
-
   .nav-list {
     flex-wrap: wrap;
   }
 
   .nav-list__item:last-child {
     margin-left: 16px;
-  }
-
-  .header-end__button--checkstatus {
-    margin-right: 16px;
   }
 }
