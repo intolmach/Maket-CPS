@@ -1,0 +1,99 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white;
+  column-gap: 16px;
+  padding: 16px 20px;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.header-start {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+}
+
+.header-end {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+}
+
+.header-start__button--burger {
+  background-image: url(../img/burger.svg);
+}
+
+.header-start__button--burger::after {
+  margin-left: 62px;
+  content: '';
+  width: 2px;
+  height: 32px;
+  background-color: $platinum;
+  display: none;
+}
+
+.header-end__button--repair {
+  background-image: url(../img/repair.svg);
+}
+
+.header-end__button--repair::after {
+  margin-left: -22px;
+  content: '';
+  width: 2px;
+  height: 32px;
+  background-color: $platinum;
+  display: block;
+}
+
+.header-end__button--checkstatus {
+  background-image: url(../img/checkstatus.svg);
+}
+
+.header-end__button--profile {
+  background-image: url(../img/profile.svg);
+  margin-right: 26px;
+}
+
+.header-end__button--call {
+  background-image: url(../img/call.svg);
+}
+
+.header-end__button--chat {
+  background-image: url(../img/chat.svg);
+}
+
+.header-start__logo {
+  width: 97px;
+  height: 51px;
+  object-fit: contain;
+}
+
+.button span {
+  display: none;
+}
+
+.header-start .header__divider {
+  display: none;
+}
+
+.header-end__button--call,
+.header-end__button--chat,
+.header-end__button--profile {
+  display: none;
+}

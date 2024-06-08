@@ -1,0 +1,134 @@
+.swiper-menu__list .swiper-menu__slide--technika {
+  height: 160px;
+}
+
+.swiper-menu__slide--technika {
+  border: 1px solid $platinum;
+  background-color: $white;
+  border-radius: 6px;
+  padding: 16px;
+  transition: ease 300ms;
+  list-style-type: none;
+}
+
+.swiper-menu__slide--technika:hover {
+  transform: scale(1.2);
+  background-color: $platinum;
+}
+
+.swiper-menu__list .swiper-pagination-bullet-active {
+  background-color: $grey;
+}
+
+.swiper-slide__link::after {
+  content: url(../img/go.svg);
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.swiper-slide__link--technika {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 100%;
+  color: $grafit;
+}
+
+.swiper-menu__toggle-button--technika {
+  display: none;
+}
+
+.swiper-slide__link--technika {
+  align-items: start;
+}
+
+.swiper-slide__link--technika::after {
+  align-self: end;
+}
+
+.swiper-menu__list .swiper-menu__slide--technika {
+  width: 240px;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-menu__list .swiper-menu__slide--technika {
+    width: 100%;
+  }
+
+  .swiper-menu__slides-wrapper--technika .swiper-menu__slide--technika {
+    display: none;
+  }
+
+  .swiper-menu__slides-wrapper--technika
+    .swiper-menu__slide--technika:nth-child(-n + 3) {
+    display: block;
+  }
+
+  .swiper-menu__toggle-button--technika {
+    display: block;
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    border: none;
+    background-color: transparent;
+    margin-top: 24px;
+    margin-left: 54px;
+  }
+
+  .swiper-menu__slides-wrapper--technika {
+    grid-template-columns: repeat(3, 224px);
+    display: grid !important;
+    justify-items: stretch;
+    justify-content: center;
+    grid-auto-rows: 72px;
+    gap: 24px;
+  }
+
+  .swiper-menu__slides-wrapper--technika {
+    grid-auto-rows: 160px;
+  }
+
+  .swiper-menu__toggle-button--technika::before {
+    display: block;
+    position: absolute;
+    left: -30px;
+    content: url(../img/expand.svg);
+  }
+
+  .swiper-menu__toggle-button--technika::after {
+    content: 'Показать всё';
+  }
+
+  .swiper-menu__slides-wrapper--technika-open
+    ~ .swiper-menu__toggle-button--technika::before {
+    top: -5px;
+    transform: rotate(180deg);
+  }
+
+  .swiper-menu__slides-wrapper--technika-open
+    ~ .swiper-menu__toggle-button--technika::after {
+    content: 'Скрыть';
+  }
+
+  .swiper-menu__slides-wrapper--technika-open .swiper-menu__slide--technika {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .wiper-menu__toggle-button--technika {
+    margin-left: 57px;
+  }
+
+  .swiper-menu__slides-wrapper--technika {
+    grid-template-columns: repeat(4, 240px);
+    gap: 32px;
+  }
+
+  .swiper-menu__slides-wrapper--technika
+    .swiper-menu__slide--technika:nth-child(-n + 4) {
+    display: block;
+  }
+}

@@ -1,0 +1,120 @@
+.menu-modal {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  font-family: 'TT Lakes';
+  --menu-padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  background-color: $white;
+  color: $grafit;
+  max-width: 440px;
+  height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+  padding: var(--menu-padding);
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+
+dialog::backdrop {
+  background-color: $white;
+  opacity: 0.7;
+}
+
+.menu-modal__title {
+  font-size: 24px;
+  line-height: 32px;
+  text-align: left;
+  position: relative;
+}
+
+.menu-modal__title::before {
+  --item-border-margin: 5px;
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--menu-padding));
+  top: calc(-1 * var(--item-border-margin));
+  width: 4px;
+  height: calc(100% + (var(--item-border-margin) * 2));
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: transparent;
+  transition: background 300ms;
+  background: $lightBlue;
+}
+
+.menu-modal__input {
+  width: 288px;
+  height: 48px;
+  border: 1px solid $platinum;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 16px;
+}
+
+.menu-modal__input--message {
+  height: 118px;
+}
+
+.menu-modal__input::placeholder {
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: $grey;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+.menu-modal__close-button {
+  background: url(../img/close.svg);
+}
+
+.menu-modal__button-submit {
+  background: url(../img/submit.svg) no-repeat;
+  width: 136px;
+  height: 32px;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  align-self: end;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 0px;
+  margin: 0;
+}
+
+.menu-modal__privacy {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.pink-text {
+  color: $pink;
+}
+
+@media screen and (min-width: 767px) {
+  .menu-modal__close-button {
+    position: absolute;
+    top: 13px;
+    left: -65px;
+  }
+
+  .menu-modal__input {
+    width: 376px;
+  }
+}

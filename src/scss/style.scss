@@ -1,0 +1,38 @@
+$bgColor: #24292e;
+$white: #ffffff;
+$whiteSmoke: #f8f8f8;
+$platinum: #eaeaea;
+$lightBlue: #41f6d7;
+$grey: #7e7e82;
+$grafit: #1b1c21;
+$pink: #ff3e79;
+$pung: #b8ffec;
+
+@import url('fonts.scss');
+@import url('header.scss');
+@import url('main.scss');
+@import url('menu-modal.scss');
+@import url('mobile-menu.scss');
+@import url('footer.scss');
+@import url('swiper-brands.scss');
+@import url('swiper-price.scss');
+@import url('swiper-technika.scss');
+@import url('reset.scss');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'TT Lakes';
+  color: $grafit;
+}
+
+.cps-maket {
+  font-family: 'TT Lakes';
+  display: flex;
+  min-width: 320px;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  color: #1b1c21;
+  margin: 0;
+  gap: 32px;
+}

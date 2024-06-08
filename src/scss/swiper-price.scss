@@ -1,0 +1,256 @@
+.swiper-menu__price-list .swiper-pagination {
+  position: initial;
+}
+
+.swiper-menu__slide--price {
+  border: 1px solid $platinum;
+  background-color: $white;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.swiper-menu__price-list .swiper-menu__slide--price {
+  height: 200px;
+}
+
+.swiper-menu__price-list .swiper-pagination-bullet-active {
+  background-color: $grey;
+}
+
+.swiper-slide__order {
+  position: absolute;
+  top: 150px;
+  left: 110px;
+}
+
+.swiper-slide__order::after {
+  content: url(../img/Zakaz.svg);
+  display: block;
+}
+
+.swiper-menu__price-list .swiper-menu__slide--price {
+  width: 240px;
+}
+
+.swiper-menu__slides-wrapper--price .swiper-menu__slide--price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+.swiper-menu__slides-wrapper--price .swiper-menu__slide--price:first-child {
+  display: none;
+}
+
+.swiper-slide__service {
+  position: relative;
+}
+
+.swiper-slide__service::before {
+  position: absolute;
+  content: 'Ремонтные услуги';
+  font-family: TT Lakes;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  top: -20px;
+}
+
+.swiper-slide__price {
+  position: relative;
+}
+
+.swiper-slide__price::before {
+  position: absolute;
+  content: 'Цена';
+  font-family: TT Lakes;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  top: -20px;
+}
+
+.swiper-slide__time {
+  position: relative;
+}
+
+.swiper-slide__time::before {
+  position: absolute;
+  content: 'Срок';
+  font-family: TT Lakes;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  top: -20px;
+}
+
+.price-description {
+  padding: 16px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.commercial-btn {
+  position: relative;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  font-weight: 500;
+  border: none;
+  background-color: $whiteSmoke;
+  padding: 0;
+}
+
+.commercial-btn::after {
+  position: absolute;
+  content: url(../img/more.svg);
+  top: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-menu__slide--price::after {
+    content: '';
+    position: absolute;
+    width: 688px;
+    height: 1px;
+    background-color: $platinum;
+    top: 62px;
+  }
+
+  .swiper-menu__slide--price:first-child::after {
+    display: none;
+  }
+
+  .swiper-menu__slide--price:last-child::after {
+    display: none;
+  }
+
+  .swiper-slide__time::before {
+    display: none;
+  }
+
+  .swiper-slide__price::before {
+    display: none;
+  }
+
+  .swiper-slide__service::before {
+    display: none;
+  }
+
+  .swiper-slide__service {
+    flex-basis: 66%;
+  }
+
+  .swiper-slide__price {
+    flex-basis: 17%;
+  }
+
+  .swiper-slide__time {
+    flex-basis: 17%;
+  }
+
+  .swiper-slide__no-order::after {
+    content: url(../img/Zakaz.svg);
+    display: block;
+    opacity: 0;
+  }
+
+  .swiper-menu__slides-wrapper--price .swiper-menu__slide--price:first-child {
+    display: flex;
+    align-items: baseline;
+    border: none;
+    background-color: $whiteSmoke;
+  }
+
+  .swiper-menu__slides-wrapper--price .swiper-menu__slide--price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    text-align: left;
+  }
+
+  .swiper-menu__slides-wrapper--price
+    .swiper-menu__slide--price:nth-child(n + 3) {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top: none;
+  }
+
+  .swiper-menu__slides-wrapper--price
+    .swiper-menu__slide--price:nth-last-child(n + 2) {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 0;
+  }
+
+  .swiper-menu .swiper-menu__price-list {
+    margin-left: 0px;
+    padding-top: 0px;
+  }
+
+  .swiper-menu__price-list .swiper-menu__slide--price {
+    height: 64px;
+  }
+
+  .swiper-menu__price-list .swiper-menu__slide--price {
+    width: 100%;
+  }
+
+  .swiper-menu__head-title {
+    padding: 16px;
+    padding-left: 24px;
+  }
+
+  .swiper-menu__slides-wrapper--price {
+    grid-template-columns: repeat(1, 720px);
+    display: grid !important;
+    justify-items: stretch;
+    justify-content: center;
+    grid-auto-rows: 64px;
+  }
+
+  .swiper-slide__order {
+    position: static;
+  }
+
+  .swiper-slide__order::after {
+    content: url(../img/Zakaz.svg);
+    display: block;
+  }
+
+  .price-description {
+    padding: 24px;
+  }
+
+  .commercial-btn::after {
+    top: 0px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .swiper-menu__slides-wrapper--price {
+    grid-template-columns: repeat(1, 1056px);
+  }
+
+  .swiper-menu__head-title {
+    padding-left: 32px;
+  }
+
+  .price-description {
+    padding: 32px;
+  }
+
+  .swiper-menu__slide--price::after {
+    content: '';
+    position: absolute;
+    width: 1008px;
+    height: 1px;
+    background-color: $platinum;
+    top: 62px;
+  }
+}
