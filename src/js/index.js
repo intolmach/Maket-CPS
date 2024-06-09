@@ -9,3 +9,8 @@ import '../scss/swiper-price.scss'
 import '../scss/swiper-technika.scss'
 import '../scss/footer.scss'
 import '../scss/fonts.scss'
+
+///JS IMPORT
+
+import '../js/swiper.js'
+
