@@ -22,3 +22,4 @@ function closeDialogOnOutsideClick({ target }) {
     myDialogBurger.close();
   }
 }
+document.addEventListener('click', closeDialogOnOutsideClick);
