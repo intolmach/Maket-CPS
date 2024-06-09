@@ -4,19 +4,21 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-function createSwiper(containerClass) {
-  return new Swiper(`.${containerClass}`, {
+if (window.matchMedia("(max-width: 767px)").matches) {
+  const swiper = new Swiper('.swiper', {
+    modules: [Navigation, Pagination],
     direction: 'horizontal',
     loop: true,
     slidesPerView: 'auto',
     centeredSlides: true,
     spaceBetween: 16,
 
-    // If we need pagination
+
     pagination: {
       clickable: true,
       el: '.swiper-pagination',
     }
+
   });
 }
 
