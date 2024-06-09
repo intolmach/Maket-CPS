@@ -13,4 +13,6 @@ import '../scss/fonts.scss'
 ///JS IMPORT
 
 import '../js/swiper.js'
-import '../js/modalBtn.js'
+import '../js/modalMenuBtn.js'
+import '../js/modalCallBtn.js'
+import '../js/modalChatBtn.js'

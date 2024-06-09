@@ -1,7 +1,6 @@
-/* import Swiper from 'swiper';
+import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/swiper-bundle.css'
 function createSwiper(containerClass) {
   console.log(document.querySelector(`.${containerClass}`))
   return new Swiper(`.${containerClass}`, {
@@ -22,4 +21,4 @@ if (window.matchMedia("(max-width: 767px)").matches) {
   createSwiper('swiper-brands');
   createSwiper('swiper-technika');
   createSwiper('swiper-price');
-} */
+}
