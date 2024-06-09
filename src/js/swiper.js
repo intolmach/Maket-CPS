@@ -1,4 +1,4 @@
-import Swiper from 'swiper';
+/* import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -22,4 +22,4 @@ if (window.matchMedia("(max-width: 767px)").matches) {
   createSwiper('swiper-brands');
   createSwiper('swiper-technika');
   createSwiper('swiper-price');
-}
+} */
