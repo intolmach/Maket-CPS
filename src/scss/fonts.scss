@@ -1,43 +1,43 @@
 @font-face {
   font-family: 'TT Lakes';
-  src: url('TTLakes-Bold.eot');
+  src: url('../fonts/TTLakes-Bold.eot');
   src: local('TT Lakes Bold'), local('TTLakes-Bold'),
-    url('TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-    url('TTLakes-Bold.woff') format('woff'),
-    url('TTLakes-Bold.ttf') format('truetype');
+    url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Bold.woff') format('woff'),
+    url('../fonts/TTLakes-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Lakes';
-  src: url('TTLakes-Black.eot');
+  src: url('../fonts/TTLakes-Black.eot');
   src: local('TT Lakes Black'), local('TTLakes-Black'),
-    url('TTLakes-Black.eot?#iefix') format('embedded-opentype'),
-    url('TTLakes-Black.woff') format('woff'),
-    url('TTLakes-Black.ttf') format('truetype');
+    url('../fonts/TTLakes-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Black.woff') format('woff'),
+    url('../fonts/TTLakes-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Lakes';
-  src: url('TTLakes-Medium.eot');
+  src: url('../fonts/TTLakes-Medium.eot');
   src: local('TT Lakes Medium'), local('TTLakes-Medium'),
-    url('TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-    url('TTLakes-Medium.woff') format('woff'),
-    url('TTLakes-Medium.ttf') format('truetype');
+    url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Medium.woff') format('woff'),
+    url('../fonts/TTLakes-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Lakes';
-  src: url('TTLakes-Light.eot');
+  src: url('../fonts/-Light.eot');
   src: local('TT Lakes Light'), local('TTLakes-Light'),
-    url('TTLakes-Light.eot?#iefix') format('embedded-opentype'),
-    url('TTLakes-Light.woff') format('woff'),
-    url('TTLakes-Light.ttf') format('truetype');
+    url('../fonts/TTLakes-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Light.woff') format('woff'),
+    url('../fonts/TTLakes-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
