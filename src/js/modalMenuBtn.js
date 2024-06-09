@@ -8,4 +8,17 @@ showDialogBtnBurger.addEventListener('click', () => {
 
 closeDialogBtnBurger.addEventListener('click', () => {
   myDialogBurger.close();
-}); 
+});
+
+function closeDialogOnOutsideClick({ target }) {
+  const isClickOnDialog = target === myDialogBurger;
+  const isClickOnDialogChildrenNodes = myDialogBurger.contains(target);
+
+  const isClickOutsideOfDialog = !(
+    isClickOnDialog || isClickOnDialogChildrenNodes
+  )
+
+  if (isClickOutsideOfDialog) {
+    myDialogBurger.close();
+  }
+}
