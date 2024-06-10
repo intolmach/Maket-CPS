@@ -19,70 +19,71 @@
   padding: var(--menu-padding);
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
     -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-}
 
-dialog::backdrop {
-  background-color: $white;
-  opacity: 0.7;
-}
+  &__title {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+    position: relative;
 
-.menu-modal__title {
-  font-size: 24px;
-  line-height: 32px;
-  text-align: left;
-  position: relative;
-}
+    &::before {
+      --item-border-margin: 5px;
+      content: '';
+      position: absolute;
+      left: calc(-1 * var(--menu-padding));
+      top: calc(-1 * var(--item-border-margin));
+      width: 4px;
+      height: calc(100% + (var(--item-border-margin) * 2));
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background: transparent;
+      transition: background 300ms;
+      background: $lightBlue;
+    }
+  }
 
-.menu-modal__title::before {
-  --item-border-margin: 5px;
-  content: '';
-  position: absolute;
-  left: calc(-1 * var(--menu-padding));
-  top: calc(-1 * var(--item-border-margin));
-  width: 4px;
-  height: calc(100% + (var(--item-border-margin) * 2));
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background: transparent;
-  transition: background 300ms;
-  background: $lightBlue;
-}
+  &__input {
+    width: 288px;
+    height: 48px;
+    border: 1px solid $platinum;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 16px;
 
-.menu-modal__input {
-  width: 288px;
-  height: 48px;
-  border: 1px solid $platinum;
-  border-radius: 5px;
-  box-sizing: border-box;
-  margin-top: 16px;
-}
+    &--message {
+      height: 118px;
+    }
 
-.menu-modal__input--message {
-  height: 118px;
-}
+    &::placeholder {
+      padding-left: 16px;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left;
+      color: $grey;
+      box-sizing: border-box;
+      vertical-align: top;
+    }
+  }
 
-.menu-modal__input::placeholder {
-  padding-left: 16px;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: left;
-  color: $grey;
-  box-sizing: border-box;
-  vertical-align: top;
-}
+  &__close-button {
+    background: url(../img/close.svg);
+  }
 
-.menu-modal__close-button {
-  background: url(../img/close.svg);
-}
+  &__button-submit {
+    background: url(../img/submit.svg) no-repeat;
+    width: 136px;
+    height: 32px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    align-self: end;
+  }
 
-.menu-modal__button-submit {
-  background: url(../img/submit.svg) no-repeat;
-  width: 136px;
-  height: 32px;
-  background-color: transparent;
-  border: 0;
-  padding: 0;
-  align-self: end;
+  &__privacy {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+  }
 }
 
 .button:hover {
@@ -99,14 +100,13 @@ dialog::backdrop {
   margin: 0;
 }
 
-.menu-modal__privacy {
-  font-size: 14px;
-  line-height: 16px;
-  text-align: left;
-}
-
 .pink-text {
   color: $pink;
+}
+
+dialog::backdrop {
+  background-color: $white;
+  opacity: 0.7;
 }
 
 @media screen and (min-width: 767px) {

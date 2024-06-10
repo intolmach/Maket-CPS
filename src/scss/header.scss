@@ -145,10 +145,10 @@
 
   .header-end__button--repair {
     margin-right: 24px;
-  }
 
-  .header-end__button--repair::after {
-    display: none;
+    &::after {
+      display: none;
+    }
   }
 
   .header-end__button--checkstatus {
