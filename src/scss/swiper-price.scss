@@ -3,6 +3,9 @@
 .swiper-menu__price-list .swiper-pagination {
   position: initial;
 }
+.swiper-menu .swiper-menu__price-list {
+  margin-left: -50px;
+}
 
 .swiper-menu__slide--price {
   border: 1px solid $platinum;
