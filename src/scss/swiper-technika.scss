@@ -1,7 +1,14 @@
 @import 'style';
 
-.swiper-menu__list .swiper-menu__slide--technika {
-  height: 160px;
+.swiper-menu__list {
+  & .swiper-menu__slide--technika {
+    height: 160px;
+    width: 240px;
+  }
+
+  & .swiper-pagination-bullet-active {
+    background-color: $grey;
+  }
 }
 
 .swiper-menu__slide--technika {
@@ -11,15 +18,11 @@
   padding: 16px;
   transition: ease 300ms;
   list-style-type: none;
-}
 
-.swiper-menu__slide--technika:hover {
-  transform: scale(1.2);
-  background-color: $platinum;
-}
-
-.swiper-menu__list .swiper-pagination-bullet-active {
-  background-color: $grey;
+  &:hover {
+    transform: scale(1.2);
+    background-color: $platinum;
+  }
 }
 
 .swiper-slide__link::after {
@@ -35,22 +38,14 @@
   align-items: start;
   height: 100%;
   color: $grafit;
+
+  &::after {
+    align-self: end;
+  }
 }
 
 .swiper-menu__toggle-button--technika {
   display: none;
-}
-
-.swiper-slide__link--technika {
-  align-items: start;
-}
-
-.swiper-slide__link--technika::after {
-  align-self: end;
-}
-
-.swiper-menu__list .swiper-menu__slide--technika {
-  width: 240px;
 }
 
 @media screen and (min-width: 768px) {
@@ -77,30 +72,24 @@
     background-color: transparent;
     margin-top: 24px;
     margin-left: 54px;
-  }
 
+    &::before {
+      display: block;
+      position: absolute;
+      left: -30px;
+      content: url(../img/expand.svg);
+    }
+    &::after {
+      content: 'Показать всё';
+    }
+  }
   .swiper-menu__slides-wrapper--technika {
     grid-template-columns: repeat(3, 224px);
     display: grid !important;
     justify-items: stretch;
     justify-content: center;
-    grid-auto-rows: 72px;
-    gap: 24px;
-  }
-
-  .swiper-menu__slides-wrapper--technika {
     grid-auto-rows: 160px;
-  }
-
-  .swiper-menu__toggle-button--technika::before {
-    display: block;
-    position: absolute;
-    left: -30px;
-    content: url(../img/expand.svg);
-  }
-
-  .swiper-menu__toggle-button--technika::after {
-    content: 'Показать всё';
+    gap: 24px;
   }
 
   .swiper-menu__slides-wrapper--technika-open
