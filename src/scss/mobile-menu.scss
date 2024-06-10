@@ -4,9 +4,12 @@
   float: left;
   border: none;
   height: 100vh;
+  max-height: 100vh;
   overflow-y: hidden;
   position: relative;
   top: 0;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 }
 
 @media (min-width: 1440px) {
@@ -29,8 +32,6 @@
   height: 100vh;
   margin: 0;
   padding: var(--menu-padding);
-  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
-    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 }
 
 .mobile-head {
@@ -176,5 +177,8 @@
 @media (min-width: 1440px) {
   .mobile-head__button--close {
     display: none;
+  }
+  .modal-menu {
+    box-shadow: none;
   }
 }
