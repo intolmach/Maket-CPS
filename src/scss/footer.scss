@@ -8,6 +8,7 @@
   line-height: 16px;
   text-align: center;
   color: $grey;
+  padding: 16px;
 }
 
 @media screen and (min-width: 767px) {
@@ -16,17 +17,17 @@
     justify-content: space-between;
     padding: 0 24px 24px 24px;
     gap: 0px;
-  }
 
-  .footer > p {
-    flex-basis: 100%;
-  }
+    & > p {
+      flex-basis: 100%;
 
-  .footer > p:first-child {
-    text-align: left;
-  }
+      &:first-child {
+        text-align: left;
+      }
 
-  .footer > p:last-child {
-    text-align: right;
+      &:last-child {
+        text-align: right;
+      }
+    }
   }
 }
