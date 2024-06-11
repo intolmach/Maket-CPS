@@ -11,3 +11,15 @@ showDialogBtnCall.forEach((btn) => {
 closeDialogBtnCall.addEventListener('click', () => {
   myDialogCall.close();
 });
+
+document.addEventListener('click', (e) => {
+  if (e.target === showDialogBtnCall || e.target === closeDialogBtnCall) {
+    return;
+  }
+  const isClickOnDialog = e.target === myDialogCall;
+  const isClickOutsideOfDialog = isClickOnDialog;
+  if (isClickOutsideOfDialog) {
+    myDialogCall.close();
+  }
+  return true
+});

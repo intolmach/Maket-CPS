@@ -11,3 +11,15 @@ showDialogBtnRepair.forEach((btn) => {
 closeDialogBtnRepair.addEventListener('click', () => {
   myDialogRepair.close();
 });
+
+document.addEventListener('click', (e) => {
+  if (e.target === showDialogBtnRepair || e.target === closeDialogBtnRepair) {
+    return;
+  }
+  const isClickOnDialog = e.target === myDialogRepair;
+  const isClickOutsideOfDialog = isClickOnDialog;
+  if (isClickOutsideOfDialog) {
+    myDialogRepair.close();
+  }
+  return true
+});
