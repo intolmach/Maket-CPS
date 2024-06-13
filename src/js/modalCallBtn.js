@@ -17,8 +17,7 @@ document.addEventListener('click', (e) => {
     return;
   }
   const isClickOnDialog = e.target === myDialogCall;
-  const isClickOutsideOfDialog = isClickOnDialog;
-  if (isClickOutsideOfDialog) {
+  if (isClickOnDialog) {
     myDialogCall.close();
   }
   return true

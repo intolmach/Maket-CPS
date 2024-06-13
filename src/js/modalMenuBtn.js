@@ -15,8 +15,7 @@ document.addEventListener('click', (e) => {
     return;
   }
   const isClickOnDialog = e.target === myDialogBurger;
-  const isClickOutsideOfDialog = isClickOnDialog;
-  if (isClickOutsideOfDialog) {
+  if (isClickOnDialog) {
     myDialogBurger.close();
   }
   return true
